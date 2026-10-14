@@ -51,105 +51,72 @@
 <main class="contact">
   <div class="wrap">
 
-    <div class="contact-intro">
-      <h1>Cuéntanos tu caso</h1>
-      <p>Completa tus datos y te responderemos en un plazo de 24 horas hábiles. <!-- POR VALIDAR: plazo de respuesta --></p>
-
-      <aside class="specialist" aria-label="Especialista que atenderá tu consulta">
-        <img class="specialist-photo" src="dayana.jpg" alt="Dayana Lucía Mechán Alvarez, especialista legal de Libelaw" width="800" height="800">
-        <div class="specialist-head">
-          <p class="role">Especialista legal</p>
-          <h2>Dayana Lucía Mechán Alvarez</h2>
-        </div>
-        <!-- POR VALIDAR: credenciales -->
-        <p>Abogada especializada en Derecho Corporativo y Propiedad Intelectual. Colegiada CAL N° 96652. Ella revisará tu mensaje y te contactará personalmente.</p>
-        <ul>
-          <li><a href="https://wa.me/51984426215?text=Hola%20Dayana%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener">WhatsApp 984 426 215</a></li>
-          <li><a href="mailto:infolibelaw@gmail.com">infolibelaw@gmail.com</a></li>
-        </ul>
-      </aside>
-    </div>
-
-    <form class="form" action="https://formsubmit.co/infolibelaw@gmail.com" method="POST" data-ajax data-success="Gracias por escribirnos. Dayana revisará tu caso y te contactará por el medio que elegiste.">
-      <h2>Tus datos</h2>
-      <p>Los campos con * son obligatorios.</p>
-
-      <input type="hidden" name="_subject" value="Nueva consulta desde la web de Libelaw">
-      <input type="hidden" name="_template" value="table">
-      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-      <div class="fields">
-        <div class="field full">
-          <label for="nombre">Nombre completo *</label>
-          <input id="nombre" name="Nombre" type="text" autocomplete="name" required maxlength="100">
-        </div>
-        <div class="field">
-          <label for="correo">Correo electrónico *</label>
-          <input id="correo" name="email" type="email" autocomplete="email" required maxlength="120">
-        </div>
-        <div class="field">
-          <label for="celular">Celular / WhatsApp *</label>
-          <input id="celular" name="Celular" type="tel" autocomplete="tel" inputmode="tel" required pattern="(\+?51)?\s?9\d{2}\s?\d{3}\s?\d{3}" placeholder="9XX XXX XXX" title="Número de celular peruano de 9 dígitos que empieza con 9">
-        </div>
-
-        <fieldset class="field full">
-          <legend>Eres *</legend>
-          <div class="choices">
-            <label><input type="radio" name="Tipo de cliente" value="Persona natural" required> Persona natural</label>
-            <label><input type="radio" name="Tipo de cliente" value="Emprendedor"> Emprendedor</label>
-            <label><input type="radio" name="Tipo de cliente" value="Empresa"> Empresa</label>
-          </div>
-        </fieldset>
-
-        <div class="field">
-          <label for="empresa">Empresa o negocio <small>(opcional)</small></label>
-          <input id="empresa" name="Empresa" type="text" autocomplete="organization" maxlength="120">
-        </div>
-        <div class="field">
-          <label for="ruc">RUC <small>(opcional)</small></label>
-          <input id="ruc" name="RUC" type="text" inputmode="numeric" pattern="(10|15|17|20)\d{9}" maxlength="11" title="RUC de 11 dígitos">
-        </div>
-
-        <div class="field full">
-          <label for="servicio">¿En qué te podemos ayudar? *</label>
-          <select id="servicio" name="Servicio" required>
-            <option value="">Elige un servicio</option>
-            <option>Constitución de empresas</option>
-            <option>Contratos comerciales</option>
-            <option>Propiedad intelectual</option>
-            <option>Datos personales</option>
-            <option>Protección al consumidor</option>
-            <option>Asesoría y procesos laborales</option>
-            <option>Contrataciones con el Estado</option>
-            <option>Procesos civiles</option>
-            <option>Procesos penales</option>
-            <option>Derecho migratorio</option>
-            <option>No estoy seguro</option>
-          </select>
-        </div>
-
-        <div class="field full">
-          <label for="mensaje">Cuéntanos tu caso *</label>
-          <textarea id="mensaje" name="Mensaje" required minlength="20" maxlength="2000" placeholder="Describe brevemente tu situación y qué necesitas resolver."></textarea>
-        </div>
-
-        <fieldset class="field full">
-          <legend>¿Cómo prefieres que te contactemos? *</legend>
-          <div class="choices">
-            <label><input type="radio" name="Contacto preferido" value="WhatsApp" required checked> WhatsApp</label>
-            <label><input type="radio" name="Contacto preferido" value="Llamada"> Llamada</label>
-            <label><input type="radio" name="Contacto preferido" value="Correo"> Correo</label>
-          </div>
-        </fieldset>
+    <aside class="specialist" aria-label="Especialista que atenderá tu consulta">
+      <img class="specialist-photo" src="dayana.jpg" alt="Dayana Lucía Mechán Alvarez, especialista legal de Libelaw" width="800" height="800">
+      <div class="specialist-head">
+        <p class="role">Especialista legal</p>
+        <h2>Dayana Lucía Mechán Alvarez</h2>
       </div>
+      <!-- POR VALIDAR: credenciales -->
+      <p>Abogada especializada en Derecho Corporativo y Propiedad Intelectual. Colegiada CAL N° 96652. Ella te atenderá personalmente.</p>
+      <ul>
+        <li><a href="https://wa.me/51984426215?text=Hola%20Dayana%2C%20quiero%20agendar%20una%20asesor%C3%ADa" target="_blank" rel="noopener">WhatsApp 984 426 215</a></li>
+        <li><a href="mailto:infolibelaw@gmail.com">infolibelaw@gmail.com</a></li>
+      </ul>
+    </aside>
 
-      <label class="consent">
-        <input type="checkbox" name="Autoriza tratamiento de datos" value="Sí" required>
-        <span>Autorizo a Libelaw a usar mis datos solo para responder esta consulta, conforme a su <a href="privacidad.html" target="_blank">Política de privacidad</a> y la Ley N° 29733. *</span>
-      </label>
+    <div class="contact-intro">
+      <h1>Agenda tu asesoría</h1>
+      <p>Elige el día y la hora en el calendario. Si prefieres, déjanos tu número y te escribimos para coordinar.</p>
+      <a class="btn btn-gold booking-cta" data-booking href="index.html#agenda">Elegir fecha y hora</a>
 
-      <button class="btn btn-primary" type="submit">Enviar mi consulta</button>
-    </form>
+      <form class="form" action="https://formsubmit.co/infolibelaw@gmail.com" method="POST" data-ajax data-success="Listo. Te escribiremos por WhatsApp para coordinar tu cita.">
+        <h2>¿Prefieres que te contactemos?</h2>
+        <p>Solo necesitamos tu nombre y tu celular.</p>
+
+        <input type="hidden" name="_subject" value="Solicitud de cita desde la web de Libelaw">
+        <input type="hidden" name="_template" value="table">
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="fields">
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="Nombre" type="text" autocomplete="name" required maxlength="100">
+          </div>
+          <div class="field">
+            <label for="celular">Celular / WhatsApp</label>
+            <input id="celular" name="Celular" type="tel" autocomplete="tel" inputmode="tel" required pattern="(\+?51)?\s?9\d{2}\s?\d{3}\s?\d{3}" placeholder="9XX XXX XXX" title="Número de celular peruano de 9 dígitos que empieza con 9">
+          </div>
+          <div class="field full">
+            <label for="servicio">Tema <small>(opcional)</small></label>
+            <select id="servicio" name="Servicio">
+              <option>No estoy seguro</option>
+              <option>Constitución de empresas</option>
+              <option>Contratos comerciales</option>
+              <option>Propiedad intelectual</option>
+              <option>Datos personales</option>
+              <option>Protección al consumidor</option>
+              <option>Asesoría y procesos laborales</option>
+              <option>Contrataciones con el Estado</option>
+              <option>Procesos civiles</option>
+              <option>Procesos penales</option>
+              <option>Derecho migratorio</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="mensaje">Mensaje <small>(opcional)</small></label>
+            <textarea id="mensaje" name="Mensaje" maxlength="500" placeholder="Si quieres, cuéntanos tu caso en pocas palabras."></textarea>
+          </div>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" name="Autoriza tratamiento de datos" value="Sí" required>
+          <span>Autorizo a Libelaw a usar mis datos solo para coordinar mi asesoría, según su <a href="privacidad.html" target="_blank">Política de privacidad</a>.</span>
+        </label>
+
+        <button class="btn btn-primary" type="submit">Quiero que me contacten</button>
+      </form>
+    </div>
 
   </div>
 </main>

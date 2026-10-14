@@ -434,3 +434,24 @@ section h2::before{content:"";display:block;width:48px;height:5px;margin-bottom:
   .lr-title img{width:60px;height:auto}
   .form .no-print .btn{width:100%;justify-content:center}
 }
+
+/* Contacto: agenda primero, formulario mínimo */
+.booking-cta{margin-bottom:32px}
+.contact .form h2{font-size:1.6rem}
+.contact .form>p{margin-bottom:20px}
+.contact .field textarea{min-height:96px}
+.contact .form .consent{margin:18px 0}
+@media (max-width:900px){
+  .contact .wrap{gap:24px}
+}
+@media (max-width:700px){
+  .contact-intro h1{font-size:2.2rem;margin-bottom:10px}
+  .booking-cta{width:100%;justify-content:center;margin-bottom:24px}
+  /* Especialista compacta: foto redonda y nombre */
+  .specialist{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;padding:14px 16px}
+  .specialist-photo{width:64px;height:64px;margin:0;border-radius:50%;aspect-ratio:1/1;object-position:50% 45%}
+  .specialist-head{margin:0}
+  .specialist h2{font-size:1.2rem}
+  .specialist>p,.specialist ul{display:none}
+  .contact .form{padding:22px 18px}
+}
