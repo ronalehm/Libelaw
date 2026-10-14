@@ -264,9 +264,12 @@ fieldset.field{border:0;margin:0;padding:0}
 .channels span{color:var(--muted);font-size:.95rem}
 
 /* Libro de Reclamaciones */
-.lr{display:inline-flex;align-items:center;gap:10px;margin-top:16px;padding:10px 14px;border:1.5px solid #C3C9E0;border-radius:8px;color:var(--white);font-weight:600}
-.lr:hover{border-color:var(--white);text-decoration:none!important}
-.lr svg{flex:none}
+.lr{display:inline-flex;align-items:center;gap:12px;margin-top:18px;padding:10px 16px 10px 12px;background:var(--white);color:var(--ink);border-radius:8px;font-size:.9rem;line-height:1.2;text-decoration:none}
+.lr:hover{outline:2px solid var(--mostaza);text-decoration:none!important}
+.lr svg{flex:none;color:var(--granate)}
+.lr b{font-size:1rem;color:var(--navy)}
+.lr-title{display:flex;align-items:center;gap:14px;font-size:clamp(2rem,4vw,2.8rem);color:var(--navy);margin-bottom:6px}
+.lr-title svg{flex:none;color:var(--granate)}
 .form h3{font-size:1.25rem;color:var(--navy);margin:32px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
 .form h3:first-of-type{border-top:0;padding-top:0;margin-top:8px}
 .form .datos{margin:0 0 8px;background:var(--paper)}
