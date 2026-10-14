@@ -142,8 +142,8 @@ section{padding:96px 0}
 .faq details,.doc details{border-bottom:1px solid var(--line);padding:20px 0}
 .faq summary,.doc summary{cursor:pointer;font-weight:600;font-size:1.1rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
 .faq summary::-webkit-details-marker,.doc summary::-webkit-details-marker{display:none}
-.faq summary::after,.doc summary::after{content:"+";font-family:var(--serif);font-size:1.6rem;line-height:1;color:var(--granate)}
-.faq details[open] summary::after,.doc details[open] summary::after{content:"−"}
+.faq summary::after,.doc summary::after{content:"";flex:none;width:10px;height:10px;margin:6px 4px 0 0;border-right:2.5px solid var(--granate);border-bottom:2.5px solid var(--granate);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after,.doc details[open] summary::after{transform:rotate(-135deg);margin-top:12px}
 .faq details p,.doc details p{margin-top:12px;color:var(--muted);max-width:60ch}
 
 /* Footer */
@@ -313,3 +313,9 @@ fieldset.field{border:0;margin:0;padding:0}
   .sm-hide{display:none}
 }
 .consent.full{grid-column:1/-1}
+.faq summary:hover,.doc summary:hover{color:var(--navy)}
+.faq .wrap>div:first-child{align-self:start;position:sticky;top:96px}
+.faq-more{color:var(--muted);margin-top:16px;max-width:32ch}
+.faq-more a{color:var(--navy);font-weight:600}
+@media (max-width:900px){.faq .wrap>div:first-child{position:static}}
+@media (prefers-reduced-motion:reduce){.faq summary::after,.doc summary::after{transition:none}}
