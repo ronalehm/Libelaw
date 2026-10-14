@@ -82,10 +82,10 @@
 
   <div class="pillars" aria-label="Lo que impulsamos">
     <ul class="wrap">
-      <li style="--c:var(--mostaza)">Crea</li>
-      <li style="--c:#7E8FD6">Innova</li>
-      <li style="--c:#D9566A">Desarrolla</li>
-      <li style="--c:var(--mostaza)">Emprende</li>
+      <li style="--c:var(--navy)"><svg class="pil-icon" aria-hidden="true"><use href="iconos.svg#pil-crea"/></svg>Crea</li>
+      <li style="--c:var(--mostaza)"><svg class="pil-icon" aria-hidden="true"><use href="iconos.svg#pil-innova"/></svg>Innova</li>
+      <li style="--c:var(--granate)"><svg class="pil-icon" aria-hidden="true"><use href="iconos.svg#pil-desarrolla"/></svg>Desarrolla</li>
+      <li style="--c:var(--navy)"><svg class="pil-icon" aria-hidden="true"><use href="iconos.svg#pil-emprende"/></svg>Emprende</li>
     </ul>
   </div>
 
@@ -106,86 +106,82 @@
         <h2>Servicios legales</h2>
         <p class="m-hide">Asesoría personalizada para que alcances tus objetivos. Elige según lo que necesita tu negocio hoy.</p>
       </div>
-      <p class="swipe-hint">Desliza las tarjetas para ver los 10 servicios.</p>
+      <p class="swipe-hint">Desliza las tarjetas para ver los 11 servicios.</p>
     </div>
 
-    <!-- Dos filas en movimiento: la primera hacia la izquierda, la segunda hacia la derecha. Se pausan al pasar el mouse. -->
-    <div class="marquee" aria-label="Servicios para formalizar y proteger tu negocio">
+    <!-- Dos filas en movimiento: la primera hacia la izquierda, la segunda hacia la derecha. Se pausan al pasar el mouse. En móvil se deslizan con el dedo. -->
+    <div class="marquee" aria-label="Servicios para tu negocio, parte 1">
       <div class="marquee-track">
         <article class="svc" style="--c:var(--navy)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span>
-          <p class="svc-cat">Formaliza tu negocio</p>
-          <h3>Constitución de empresas</h3>
-          <p>Crea tu empresa con la estructura adecuada y mantén al día actas, estatutos y poderes.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-objetivos"/></svg>
+          <h3>Asesoría legal personalizada</h3>
+          <p>Te orientamos para que alcances los objetivos de tu negocio sin riesgos legales.</p>
+          <a data-booking href="#agenda">Consultar este servicio</a>
+        </article>
+        <article class="svc" style="--c:var(--mostaza)">
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-pi"/></svg>
+          <h3>Propiedad intelectual</h3>
+          <p>Asesoría y defensa: registro de marca, derechos de autor y protección frente a copias.</p>
+          <a data-booking href="#agenda">Consultar este servicio</a>
+        </article>
+        <article class="svc" style="--c:var(--granate)">
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-contratos"/></svg>
+          <h3>Contratos comerciales</h3>
+          <p>Redacción y revisión de acuerdos con clientes, proveedores y socios.</p>
+          <a data-booking href="#agenda">Consultar este servicio</a>
         </article>
         <article class="svc" style="--c:var(--navy)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6v18h12V7zM14 3v4h4M9 12h6M9 16h4"/></svg></span>
-          <p class="svc-cat">Formaliza tu negocio</p>
-          <h3>Contratos comerciales</h3>
-          <p>Redactamos y revisamos acuerdos con clientes, proveedores y socios antes de que firmes.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
-        </article>
-        <article class="svc" style="--c:var(--granate)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg></span>
-          <p class="svc-cat">Protege lo que creas</p>
-          <h3>Propiedad intelectual</h3>
-          <p>Registro de marca y derechos de autor, y defensa cuando alguien copia lo tuyo.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
-        </article>
-        <article class="svc" style="--c:var(--granate)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></svg></span>
-          <p class="svc-cat">Protege lo que creas</p>
-          <h3>Datos personales</h3>
-          <p>Trata la información de tus clientes y trabajadores según la ley peruana.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
-        </article>
-        <article class="svc" style="--c:var(--mostaza);--fg:var(--ink)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 13H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
-          <p class="svc-cat">Opera sin sobresaltos</p>
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-consumidor"/></svg>
           <h3>Protección al consumidor</h3>
           <p>Cumple las normas de venta y responde reclamos ante Indecopi.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
+          <a data-booking href="#agenda">Consultar este servicio</a>
+        </article>
+        <article class="svc" style="--c:var(--mostaza)">
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-empresas"/></svg>
+          <h3>Constitución de empresas</h3>
+          <p>Creación de tu empresa y redacción de documentos societarios.</p>
+          <a data-booking href="#agenda">Consultar este servicio</a>
+        </article>
+        <article class="svc" style="--c:var(--granate)">
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-datos"/></svg>
+          <h3>Protección de datos personales</h3>
+          <p>Trata la información de tus clientes y trabajadores según la ley.</p>
+          <a data-booking href="#agenda">Consultar este servicio</a>
         </article>
       </div>
     </div>
 
-    <div class="marquee reverse" aria-label="Servicios laborales, con el Estado y procesos">
+    <div class="marquee reverse" aria-label="Servicios para tu negocio, parte 2">
       <div class="marquee-track">
-        <article class="svc" style="--c:var(--mostaza);--fg:var(--ink)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M9 7V4h6v3M3 13h18"/></svg></span>
-          <p class="svc-cat">Opera sin sobresaltos</p>
+        <article class="svc" style="--c:var(--navy)">
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-laboral"/></svg>
           <h3>Asesoría y procesos laborales</h3>
           <p>Contratación, planillas, despidos y conflictos con trabajadores.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
+          <a data-booking href="#agenda">Consultar este servicio</a>
         </article>
-        <article class="svc" style="--c:var(--mostaza);--fg:var(--ink)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M12 3l9 5H3zM6 11v7M10 11v7M14 11v7M18 11v7"/></svg></span>
-          <p class="svc-cat">Opera sin sobresaltos</p>
+        <article class="svc" style="--c:var(--mostaza)">
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-estado"/></svg>
           <h3>Contrataciones con el Estado</h3>
-          <p>Te acompañamos para participar en procesos con entidades públicas.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
-        </article>
-        <article class="svc" style="--c:var(--navy)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 21h8M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg></span>
-          <p class="svc-cat">Defiende tus intereses</p>
-          <h3>Procesos civiles</h3>
-          <p>Cobranzas, incumplimientos de contrato y otras disputas.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
-        </article>
-        <article class="svc" style="--c:var(--navy)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></span>
-          <p class="svc-cat">Defiende tus intereses</p>
-          <h3>Procesos penales</h3>
-          <p>Defensa y asesoría en investigaciones y procesos penales.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
+          <p>Acompañamiento para participar en procesos con entidades públicas.</p>
+          <a data-booking href="#agenda">Consultar este servicio</a>
         </article>
         <article class="svc" style="--c:var(--granate)">
-          <span class="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
-          <p class="svc-cat">Defiende tus intereses</p>
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-civiles"/></svg>
+          <h3>Procesos civiles</h3>
+          <p>Cobranzas, incumplimientos de contrato y otras disputas.</p>
+          <a data-booking href="#agenda">Consultar este servicio</a>
+        </article>
+        <article class="svc" style="--c:var(--navy)">
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-penales"/></svg>
+          <h3>Procesos penales</h3>
+          <p>Defensa y asesoría en investigaciones y procesos penales.</p>
+          <a data-booking href="#agenda">Consultar este servicio</a>
+        </article>
+        <article class="svc" style="--c:var(--mostaza)">
+          <svg class="svc-icon" aria-hidden="true"><use href="iconos.svg#svc-migratorio"/></svg>
           <h3>Derecho migratorio</h3>
           <p>Trámites de residencia y cambio de calidad migratoria.</p>
-          <a data-booking href="#agenda" target="_blank" rel="noopener">Consultar este servicio</a>
+          <a data-booking href="#agenda">Consultar este servicio</a>
         </article>
       </div>
     </div>
@@ -244,6 +240,16 @@
           <div class="swatches" aria-hidden="true"><i style="--c:var(--navy)"></i><i style="--c:var(--granate)"></i><i style="--c:var(--mostaza)"></i></div>
           <p>Nuestra columna lleva los tres colores primarios: con solo tres se crean infinitas combinaciones. La columna y la escalera forman la L de Libelaw y te invitan a construir tu negocio sobre cimientos legales sólidos.</p>
         </div>
+      </div>
+    </div>
+    <div class="wrap mv">
+      <div>
+        <h3>Misión</h3>
+        <p>Empoderar a emprendedores y empresas mediante la reducción de la informalidad, ofreciendo servicios legales accesibles y personalizados que promuevan el cumplimiento normativo. Buscamos ser un aliado confiable para quienes desean transformar su visión empresarial en una realidad próspera y legalmente sólida.</p>
+      </div>
+      <div>
+        <h3>Visión</h3>
+        <p>Ser un estudio jurídico y contable de vanguardia, que integra inteligencia artificial para ofrecer soluciones más eficientes y personalizadas en menor tiempo. Estamos comprometidos con apoyar a poblaciones vulnerables del Perú y con el desarrollo de nuevas startups de impacto positivo en el país.</p>
       </div>
     </div>
   </section>

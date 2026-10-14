@@ -84,9 +84,8 @@ section{padding:96px 0}
 .svc{--fg:var(--white);flex:0 0 300px;min-height:310px;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--c);padding:28px 26px;display:flex;flex-direction:column;gap:10px}
 .svc-icon{width:52px;height:52px;border-radius:50%;background:var(--c);color:var(--fg);display:grid;place-items:center;margin-bottom:6px}
 .svc-icon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.svc-cat{font-size:.85rem;font-weight:600;color:var(--muted)}
 .svc h3{font-size:1.45rem;color:var(--navy)}
-.svc p:not(.svc-cat){color:var(--muted);font-size:.97rem}
+.svc p{color:var(--muted);font-size:.97rem}
 .svc a{margin-top:auto;font-weight:600;color:var(--navy);text-underline-offset:4px}
 .svc a:hover{color:var(--granate)}
 .services-cta{margin-top:56px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;color:var(--muted)}
@@ -475,3 +474,32 @@ section h2::before{content:"";display:block;width:48px;height:5px;margin-bottom:
   body:has(.m-cta) .wa{display:none}
 }
 @media (prefers-reduced-motion:reduce){.m-cta{transition:none}.btn:active{transform:none}}
+
+/* Pilares con iconos (Crea, Innova, Desarrolla, Emprende) */
+.pillars{background:var(--white);color:var(--c);padding:36px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pillars li{flex-direction:column;gap:10px;color:var(--c);font-size:clamp(1.2rem,2vw,1.6rem);text-align:center}
+.pillars li::before{display:none}
+.pil-icon{width:72px;height:72px;color:var(--c)}
+
+/* Servicios: icono grande del Canva */
+.svc .svc-icon{width:64px;height:64px;background:none;border-radius:0;color:var(--navy);display:block;margin-bottom:8px}
+.svc h3{margin-top:4px}
+
+/* Misión y visión */
+.founder .mv{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:64px;align-items:stretch}
+.mv>div{background:var(--white);border:1px solid var(--line);border-top:5px solid var(--navy);padding:28px 32px}
+.mv>div+div{border-top-color:var(--mostaza)}
+.mv h3{font-size:1.8rem;color:var(--navy);margin-bottom:12px}
+.mv p{color:var(--muted);line-height:1.75}
+
+@media (max-width:700px){
+  .pillars{display:block;padding:20px 0}
+  .pillars ul{grid-template-columns:repeat(4,1fr);gap:4px;padding:0 8px}
+  .pillars li{font-size:.95rem;gap:6px}
+  .pil-icon{width:44px;height:44px}
+  .svc .svc-icon{width:52px;height:52px}
+  .founder .mv{grid-template-columns:1fr;gap:16px;margin-top:32px}
+  .mv>div{padding:20px}
+  .mv h3{font-size:1.4rem}
+  .mv p{font-size:.95rem;line-height:1.65}
+}
