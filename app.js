@@ -214,3 +214,15 @@ const date = now.toLocaleString('es-PE', { dateStyle: 'long', timeStyle: 'short'
 $$('[data-lr-code]').forEach(el => el.value = el.textContent = code);
 $$('[data-lr-date]').forEach(el => el.value = el.textContent = date);
 $$('[data-print]').forEach(b => b.addEventListener('click', () => print()));
+
+// ===== Barra de agenda en móvil =====
+// Visible cuando ya no se ven los botones del inicio y todavía no se llega a la sección de agenda.
+const bar = document.querySelector('.m-cta');
+if (bar && 'IntersectionObserver' in window) {
+  const visible = new Set();
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting ? visible.add(e.target) : visible.delete(e.target));
+    bar.classList.toggle('show', visible.size === 0);
+  });
+  [document.querySelector('.hero-ctas'), document.getElementById('agenda')].filter(Boolean).forEach(el => observer.observe(el));
+}

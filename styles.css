@@ -454,3 +454,24 @@ section h2::before{content:"";display:block;width:48px;height:5px;margin-bottom:
   .specialist>p,.specialist ul{display:none}
   .contact .form{padding:22px 18px}
 }
+
+/* Recorrido claro hacia la cita */
+.hero-ctas{padding-bottom:0}
+.hero-note{color:var(--muted);font-size:.95rem;margin-top:20px;padding-bottom:96px}
+.steps-cta{margin-top:32px}
+.btn:active{transform:scale(.97)}
+.m-cta{display:none}
+@media (max-width:900px){.hero-note{padding-bottom:72px}}
+@media (max-width:700px){
+  .pillars{display:none}
+  .hero-note{margin-top:14px;padding-bottom:40px;font-size:.9rem}
+  .steps-cta .btn{width:100%;justify-content:center}
+  .steps-cta{margin-top:20px}
+  /* Barra inferior fija: aparece al dejar el inicio y se oculta en la sección de agenda */
+  .m-cta{display:flex;gap:10px;align-items:center;position:fixed;left:0;right:0;bottom:0;z-index:15;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--white);border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(16,26,68,.12);transform:translateY(110%);transition:transform .25s ease}
+  .m-cta.show{transform:none}
+  .m-cta .btn{flex:1;justify-content:center;padding:13px 18px}
+  .m-cta-wa{flex:none;width:48px;height:48px;border-radius:50%;background:#25D366;display:grid;place-items:center}
+  body:has(.m-cta) .wa{display:none}
+}
+@media (prefers-reduced-motion:reduce){.m-cta{transition:none}.btn:active{transform:none}}
