@@ -112,7 +112,8 @@ section{padding:96px 0}
 .why li span{color:#C3C9E0}
 
 /* Fundadora */
-.founder .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.founder .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}
+.founder-photo{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 60%;margin-bottom:32px;border-bottom:8px solid;border-image:linear-gradient(90deg,var(--navy) 0 33.3%,var(--granate) 33.3% 66.6%,var(--mostaza) 66.6%) 1}
 .founder blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.2;color:var(--navy)}
 .founder cite{display:block;margin-top:16px;font:500 1rem var(--sans);color:var(--muted);font-style:normal}
 .founder h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:6px}
