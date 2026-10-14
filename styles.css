@@ -191,14 +191,12 @@ footer a:hover{color:var(--white);text-decoration:underline}
 
 /* Página de contacto */
 .contact{padding:72px 0 96px}
-.contact .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
-.contact-intro{position:sticky;top:96px}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;align-items:start}
 .contact-intro h1{font-size:clamp(2.4rem,5vw,3.6rem);color:var(--navy);margin-bottom:16px}
 .contact-intro>p{color:var(--muted);max-width:42ch;margin-bottom:36px}
 .specialist{background:var(--navy);color:var(--white);padding:32px}
-.specialist-head{display:flex;align-items:center;gap:18px;margin-bottom:20px}
-.avatar{width:84px;height:84px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--serif);font-size:2rem;color:var(--ink);background:linear-gradient(90deg,var(--mostaza) 0 33%,#F3D27E 33% 66%,var(--mostaza) 66%);overflow:hidden}
-.avatar img{width:100%;height:100%;object-fit:cover}
+.specialist-head{margin-bottom:16px}
+.specialist-photo{display:block;width:calc(100% + 64px);max-width:none;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 62%;margin:-32px -32px 24px}
 .specialist .role{color:var(--mostaza);font-weight:600;font-size:.95rem}
 .specialist h2{color:var(--white);font-size:1.7rem}
 .specialist p{color:#C9D0EA;font-size:.98rem}
@@ -229,7 +227,6 @@ fieldset.field{border:0;margin:0;padding:0}
   .contact .wrap{grid-template-columns:1fr}
   .fields{grid-template-columns:1fr}
   .form{padding:28px 20px}
-  .contact-intro{position:static}
   .form .btn{width:100%;justify-content:center}
 }
 
@@ -266,10 +263,10 @@ fieldset.field{border:0;margin:0;padding:0}
 /* Libro de Reclamaciones */
 .lr{display:inline-flex;align-items:center;gap:12px;margin-top:18px;padding:10px 16px 10px 12px;background:var(--white);color:var(--ink);border-radius:8px;font-size:.9rem;line-height:1.2;text-decoration:none}
 .lr:hover{outline:2px solid var(--mostaza);text-decoration:none!important}
-.lr svg{flex:none;color:var(--granate)}
+.lr img{flex:none;border:1px solid var(--line);border-radius:6px}
 .lr b{font-size:1rem;color:var(--navy)}
 .lr-title{display:flex;align-items:center;gap:14px;font-size:clamp(2rem,4vw,2.8rem);color:var(--navy);margin-bottom:6px}
-.lr-title svg{flex:none;color:var(--granate)}
+.lr-title img{flex:none;border:1px solid var(--line);border-radius:8px}
 .form h3{font-size:1.25rem;color:var(--navy);margin:32px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
 .form h3:first-of-type{border-top:0;padding-top:0;margin-top:8px}
 .form .datos{margin:0 0 8px;background:var(--paper)}
