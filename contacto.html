@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Libelaw</title>
+<meta name="description" content="Cuéntanos tu caso. Dayana Mechán, especialista legal de Libelaw, te responderá.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='9' y='3' width='4' height='22' fill='%231D2C6E'/%3E%3Crect x='13' y='3' width='3' height='22' fill='%238E2333'/%3E%3Crect x='16' y='3' width='3' height='22' fill='%23E0A526'/%3E%3Crect x='7' y='25' width='16' height='2' fill='%231D2C6E'/%3E%3Crect x='7' y='28' width='20' height='2' fill='%231D2C6E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!--
+  ENVÍO DEL FORMULARIO: usa FormSubmit (https://formsubmit.co), sin servidor propio.
+  El primer envío manda un correo de activación a infolibelaw@gmail.com: hay que confirmarlo una vez.
+  Para usar otro servicio (Formspree, Web3Forms o un PHP en Hostinger) cambia solo el "action" del <form>.
+-->
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 40 48">
+    <rect x="8" y="2" width="22" height="4" fill="#1D2C6E"/>
+    <rect x="11" y="6" width="5" height="30" fill="#1D2C6E"/>
+    <rect x="16" y="6" width="4" height="30" fill="#8E2333"/>
+    <rect x="20" y="6" width="4" height="30" fill="#E0A526"/>
+    <rect x="9" y="37" width="22" height="3" fill="#1D2C6E"/>
+    <rect x="7" y="41" width="28" height="3" fill="#1D2C6E"/>
+    <rect x="5" y="45" width="34" height="3" fill="#1D2C6E"/>
+  </symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Libelaw, inicio">
+      <svg width="30" height="36" aria-hidden="true"><use href="#logo"/></svg>Libelaw
+    </a>
+    <nav aria-label="Secciones">
+      <ul id="menu">
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#como-funciona">Cómo funciona</a></li>
+        <li><a href="index.html#fundadora">Conócenos</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" data-booking href="index.html#agenda">Agenda<span class="sm-hide">tu consulta</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main class="contact">
+  <div class="wrap">
+
+    <div class="contact-intro">
+      <h1>Cuéntanos tu caso</h1>
+      <p>Completa tus datos y te responderemos en un plazo de 24 horas hábiles. <!-- POR VALIDAR: plazo de respuesta --></p>
+
+      <aside class="specialist" aria-label="Especialista que atenderá tu consulta">
+        <div class="specialist-head">
+          <!-- Reemplazar por la foto: <img src="dayana.jpg" alt="Dayana Mechán"> -->
+          <div class="avatar" aria-hidden="true">DM</div>
+          <div>
+            <p class="role">Especialista legal</p>
+            <h2>Dayana Mechán Alvarez</h2>
+          </div>
+        </div>
+        <!-- POR VALIDAR: credenciales -->
+        <p>Abogada especializada en Derecho Corporativo y Propiedad Intelectual. Colegiada CAL N° 96652. Ella revisará tu mensaje y te contactará personalmente.</p>
+        <ul>
+          <li><a href="https://wa.me/51984426215?text=Hola%20Dayana%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener">WhatsApp 984 426 215</a></li>
+          <li><a href="mailto:infolibelaw@gmail.com">infolibelaw@gmail.com</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <form class="form" action="https://formsubmit.co/infolibelaw@gmail.com" method="POST" data-ajax data-success="Gracias por escribirnos. Dayana revisará tu caso y te contactará por el medio que elegiste.">
+      <h2>Tus datos</h2>
+      <p>Los campos con * son obligatorios.</p>
+
+      <input type="hidden" name="_subject" value="Nueva consulta desde la web de Libelaw">
+      <input type="hidden" name="_template" value="table">
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="fields">
+        <div class="field full">
+          <label for="nombre">Nombre completo *</label>
+          <input id="nombre" name="Nombre" type="text" autocomplete="name" required maxlength="100">
+        </div>
+        <div class="field">
+          <label for="correo">Correo electrónico *</label>
+          <input id="correo" name="email" type="email" autocomplete="email" required maxlength="120">
+        </div>
+        <div class="field">
+          <label for="celular">Celular / WhatsApp *</label>
+          <input id="celular" name="Celular" type="tel" autocomplete="tel" inputmode="tel" required pattern="(\+?51)?\s?9\d{2}\s?\d{3}\s?\d{3}" placeholder="9XX XXX XXX" title="Número de celular peruano de 9 dígitos que empieza con 9">
+        </div>
+
+        <fieldset class="field full">
+          <legend>Eres *</legend>
+          <div class="choices">
+            <label><input type="radio" name="Tipo de cliente" value="Persona natural" required> Persona natural</label>
+            <label><input type="radio" name="Tipo de cliente" value="Emprendedor"> Emprendedor</label>
+            <label><input type="radio" name="Tipo de cliente" value="Empresa"> Empresa</label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="empresa">Empresa o negocio <small>(opcional)</small></label>
+          <input id="empresa" name="Empresa" type="text" autocomplete="organization" maxlength="120">
+        </div>
+        <div class="field">
+          <label for="ruc">RUC <small>(opcional)</small></label>
+          <input id="ruc" name="RUC" type="text" inputmode="numeric" pattern="(10|15|17|20)\d{9}" maxlength="11" title="RUC de 11 dígitos">
+        </div>
+
+        <div class="field full">
+          <label for="servicio">¿En qué te podemos ayudar? *</label>
+          <select id="servicio" name="Servicio" required>
+            <option value="">Elige un servicio</option>
+            <option>Constitución de empresas</option>
+            <option>Contratos comerciales</option>
+            <option>Propiedad intelectual</option>
+            <option>Datos personales</option>
+            <option>Protección al consumidor</option>
+            <option>Asesoría y procesos laborales</option>
+            <option>Contrataciones con el Estado</option>
+            <option>Procesos civiles</option>
+            <option>Procesos penales</option>
+            <option>Derecho migratorio</option>
+            <option>No estoy seguro</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="mensaje">Cuéntanos tu caso *</label>
+          <textarea id="mensaje" name="Mensaje" required minlength="20" maxlength="2000" placeholder="Describe brevemente tu situación y qué necesitas resolver."></textarea>
+        </div>
+
+        <fieldset class="field full">
+          <legend>¿Cómo prefieres que te contactemos? *</legend>
+          <div class="choices">
+            <label><input type="radio" name="Contacto preferido" value="WhatsApp" required checked> WhatsApp</label>
+            <label><input type="radio" name="Contacto preferido" value="Llamada"> Llamada</label>
+            <label><input type="radio" name="Contacto preferido" value="Correo"> Correo</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" name="Autoriza tratamiento de datos" value="Sí" required>
+        <span>Autorizo a Libelaw a usar mis datos solo para responder esta consulta, conforme a su <a href="privacidad.html" target="_blank">Política de privacidad</a> y la Ley N° 29733. *</span>
+      </label>
+
+      <button class="btn btn-primary" type="submit">Enviar mi consulta</button>
+    </form>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><svg width="30" height="36" aria-hidden="true"><use href="#logo"/></svg>Libelaw</a>
+      <p><a href="contacto.html">Escríbenos un mensaje</a> y nos contactaremos contigo.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://wa.me/51984426215" target="_blank" rel="noopener">WhatsApp 984 426 215</a></li>
+        <li><a href="mailto:infolibelaw@gmail.com">infolibelaw@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Redes</h4>
+      <ul>
+        <!-- POR VALIDAR: URL exacta de Facebook -->
+        <li><a href="https://www.facebook.com/libelaw" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.tiktok.com/@libelaw_legal" target="_blank" rel="noopener">TikTok @libelaw_legal</a></li>
+        <li><a href="https://www.instagram.com/libelaw_servicioslegales" target="_blank" rel="noopener">Instagram @libelaw_servicioslegales</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ayuda y legal</h4>
+      <ul>
+        <li><a href="soporte.html">Consultas y soporte</a></li>
+        <li><a href="terminos.html">Términos y condiciones</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+      </ul>
+      <a class="lr" href="libro-reclamaciones.html">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v15H5.5A1.5 1.5 0 0 0 4 19.5zM4 19.5A1.5 1.5 0 0 0 5.5 21H20M8 7h8M8 11h6"/></svg>
+        Libro de Reclamaciones
+      </a>
+    </div>
+    <p class="legal">© 2026 Libelaw. ESTUDIO JURIDICO Y CONTABLE LIBELAW S.A.C. RUC 20614161028. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/51984426215?text=Hola%20Libelaw" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></svg>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>

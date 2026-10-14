@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Libro de Reclamaciones | Libelaw</title>
+<meta name="description" content="Libro de Reclamaciones virtual de Libelaw, conforme al Código de Protección y Defensa del Consumidor.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='9' y='3' width='4' height='22' fill='%231D2C6E'/%3E%3Crect x='13' y='3' width='3' height='22' fill='%238E2333'/%3E%3Crect x='16' y='3' width='3' height='22' fill='%23E0A526'/%3E%3Crect x='7' y='25' width='16' height='2' fill='%231D2C6E'/%3E%3Crect x='7' y='28' width='20' height='2' fill='%231D2C6E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 40 48">
+    <rect x="8" y="2" width="22" height="4" fill="#1D2C6E"/>
+    <rect x="11" y="6" width="5" height="30" fill="#1D2C6E"/>
+    <rect x="16" y="6" width="4" height="30" fill="#8E2333"/>
+    <rect x="20" y="6" width="4" height="30" fill="#E0A526"/>
+    <rect x="9" y="37" width="22" height="3" fill="#1D2C6E"/>
+    <rect x="7" y="41" width="28" height="3" fill="#1D2C6E"/>
+    <rect x="5" y="45" width="34" height="3" fill="#1D2C6E"/>
+  </symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Libelaw, inicio">
+      <svg width="30" height="36" aria-hidden="true"><use href="#logo"/></svg>Libelaw
+    </a>
+    <nav aria-label="Secciones">
+      <ul id="menu">
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#como-funciona">Cómo funciona</a></li>
+        <li><a href="index.html#fundadora">Conócenos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" data-booking href="index.html#agenda">Agenda<span class="sm-hide">tu consulta</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+    <aside class="doc-nav">
+      <p>Antes de empezar</p>
+      <ol>
+        <li>Completa la hoja con tus datos.</li>
+        <li>Al enviarla, recibes una copia en tu correo.</li>
+        <li>Te respondemos en un plazo no mayor a 15 días hábiles.</li>
+      </ol>
+      <p style="margin-top:24px">¿Solo tienes una duda?</p>
+      <ol><li><a href="soporte.html">Consultas y soporte</a></li></ol>
+    </aside>
+
+    <!--
+      ponytail: el N° de hoja se genera en el navegador con fecha y hora; no es un correlativo
+      estricto. Si Indecopi lo exige, reemplazar por numeración desde un servidor o usar una
+      plataforma de libro de reclamaciones. Las hojas quedan archivadas en infolibelaw@gmail.com
+      y deben conservarse al menos 2 años.
+    -->
+    <form class="form" id="libro" action="https://formsubmit.co/infolibelaw@gmail.com" method="POST" data-ajax data-success="Tu hoja de reclamación fue registrada. Te enviamos una copia a tu correo. Te responderemos en un plazo no mayor a 15 días hábiles.">
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem);color:var(--navy);margin-bottom:6px">Libro de Reclamaciones</h1>
+      <p>Conforme al Código de Protección y Defensa del Consumidor (Ley N° 29571). Los campos con * son obligatorios.</p>
+
+      <input type="hidden" name="_subject" value="Libro de Reclamaciones: nueva hoja">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_cc" value="">
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <dl class="datos">
+        <dt>Hoja N°</dt><dd><output data-lr-code>Se asigna al cargar la página</output></dd>
+        <dt>Fecha</dt><dd><output data-lr-date></output></dd>
+        <dt>Proveedor</dt><dd>ESTUDIO JURIDICO Y CONTABLE LIBELAW S.A.C.</dd>
+        <dt>RUC</dt><dd>20614161028</dd>
+        <dt>Domicilio fiscal</dt><dd><span class="pending">[POR COMPLETAR]</span></dd>
+      </dl>
+      <input type="hidden" name="Hoja N°" data-lr-code>
+      <input type="hidden" name="Fecha" data-lr-date>
+
+      <h3>1. Identificación del consumidor</h3>
+      <div class="fields">
+        <div class="field full">
+          <label for="lr-nombre">Nombres y apellidos *</label>
+          <input id="lr-nombre" name="Nombres y apellidos" type="text" autocomplete="name" required maxlength="120">
+        </div>
+        <div class="field">
+          <label for="lr-doc">Tipo de documento *</label>
+          <select id="lr-doc" name="Tipo de documento" required data-doc-type>
+            <option>DNI</option>
+            <option>Carné de extranjería</option>
+            <option>Pasaporte</option>
+            <option>RUC</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="lr-num">Número de documento *</label>
+          <input id="lr-num" name="Número de documento" type="text" required maxlength="12" data-doc-number>
+        </div>
+        <div class="field full">
+          <label for="lr-dir">Domicilio *</label>
+          <input id="lr-dir" name="Domicilio" type="text" autocomplete="street-address" required maxlength="200">
+        </div>
+        <div class="field">
+          <label for="lr-tel">Teléfono *</label>
+          <input id="lr-tel" name="Teléfono" type="tel" autocomplete="tel" inputmode="tel" required pattern="(\+?51)?\s?9\d{2}\s?\d{3}\s?\d{3}" placeholder="9XX XXX XXX">
+        </div>
+        <div class="field">
+          <label for="lr-mail">Correo electrónico *</label>
+          <input id="lr-mail" name="email" type="email" autocomplete="email" required maxlength="120">
+        </div>
+        <label class="consent full" style="margin:0">
+          <input type="checkbox" name="Menor de edad" value="Sí" data-toggle="apoderado">
+          <span>Soy menor de edad</span>
+        </label>
+        <div class="field full" id="apoderado" hidden>
+          <label for="lr-apo">Nombre del padre, madre o apoderado *</label>
+          <input id="lr-apo" name="Padre, madre o apoderado" type="text" maxlength="120">
+        </div>
+      </div>
+
+      <h3>2. Identificación del bien contratado</h3>
+      <div class="fields">
+        <fieldset class="field full">
+          <legend>Tipo *</legend>
+          <div class="choices">
+            <label><input type="radio" name="Bien contratado" value="Servicio" required checked> Servicio</label>
+            <label><input type="radio" name="Bien contratado" value="Producto"> Producto</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="lr-monto">Monto reclamado (S/) <small>(opcional)</small></label>
+          <input id="lr-monto" name="Monto reclamado (S/)" type="number" min="0" step="0.01" inputmode="decimal">
+        </div>
+        <div class="field">
+          <label for="lr-serv">Servicio *</label>
+          <select id="lr-serv" name="Servicio" required>
+            <option value="">Elige el servicio</option>
+            <option>Consulta inicial</option>
+            <option>Constitución de empresas</option>
+            <option>Contratos comerciales</option>
+            <option>Propiedad intelectual</option>
+            <option>Datos personales</option>
+            <option>Protección al consumidor</option>
+            <option>Asesoría y procesos laborales</option>
+            <option>Contrataciones con el Estado</option>
+            <option>Procesos civiles</option>
+            <option>Procesos penales</option>
+            <option>Derecho migratorio</option>
+            <option>Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <h3>3. Detalle de la reclamación</h3>
+      <div class="fields">
+        <fieldset class="field full">
+          <legend>Tipo *</legend>
+          <div class="choices stack">
+            <label><input type="radio" name="Tipo" value="Reclamo" required> <span>Reclamo<small>Disconformidad relacionada con el servicio contratado.</small></span></label>
+            <label><input type="radio" name="Tipo" value="Queja"> <span>Queja<small>Disconformidad no relacionada con el servicio, o malestar con la atención al público.</small></span></label>
+          </div>
+        </fieldset>
+        <div class="field full">
+          <label for="lr-detalle">Detalle *</label>
+          <textarea id="lr-detalle" name="Detalle" required minlength="20" maxlength="2000" placeholder="Cuéntanos qué pasó, con fechas si las tienes."></textarea>
+        </div>
+        <div class="field full">
+          <label for="lr-pedido">Pedido *</label>
+          <textarea id="lr-pedido" name="Pedido" required minlength="10" maxlength="1000" placeholder="¿Qué solución esperas?"></textarea>
+        </div>
+      </div>
+
+      <h3>4. Observaciones y acciones del proveedor</h3>
+      <p class="legend-text">Esta sección la completa Libelaw al responder tu reclamo o queja.</p>
+
+      <label class="consent">
+        <input type="checkbox" name="Declaración" value="Acepto" required>
+        <span>Declaro que la información es verdadera y autorizo a Libelaw a usar mis datos para atender esta reclamación, según su <a href="privacidad.html" target="_blank">Política de privacidad</a>. *</span>
+      </label>
+
+      <div class="note">
+        <p>La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el Indecopi.</p>
+        <p style="margin-top:10px">El proveedor deberá dar respuesta al reclamo o queja en un plazo no mayor a quince (15) días hábiles improrrogables.</p>
+      </div>
+
+      <div class="no-print" style="display:flex;gap:14px;flex-wrap:wrap">
+        <button class="btn btn-primary" type="submit">Enviar hoja de reclamación</button>
+        <button class="btn btn-ghost" type="button" data-print>Imprimir o guardar copia</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><svg width="30" height="36" aria-hidden="true"><use href="#logo"/></svg>Libelaw</a>
+      <p><a href="contacto.html">Escríbenos un mensaje</a> y nos contactaremos contigo.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://wa.me/51984426215" target="_blank" rel="noopener">WhatsApp 984 426 215</a></li>
+        <li><a href="mailto:infolibelaw@gmail.com">infolibelaw@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Redes</h4>
+      <ul>
+        <!-- POR VALIDAR: URL exacta de Facebook -->
+        <li><a href="https://www.facebook.com/libelaw" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.tiktok.com/@libelaw_legal" target="_blank" rel="noopener">TikTok @libelaw_legal</a></li>
+        <li><a href="https://www.instagram.com/libelaw_servicioslegales" target="_blank" rel="noopener">Instagram @libelaw_servicioslegales</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ayuda y legal</h4>
+      <ul>
+        <li><a href="soporte.html">Consultas y soporte</a></li>
+        <li><a href="terminos.html">Términos y condiciones</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+      </ul>
+      <a class="lr" href="libro-reclamaciones.html">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v15H5.5A1.5 1.5 0 0 0 4 19.5zM4 19.5A1.5 1.5 0 0 0 5.5 21H20M8 7h8M8 11h6"/></svg>
+        Libro de Reclamaciones
+      </a>
+    </div>
+    <p class="legal">© 2026 Libelaw. ESTUDIO JURIDICO Y CONTABLE LIBELAW S.A.C. RUC 20614161028. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/51984426215?text=Hola%20Libelaw" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></svg>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>
