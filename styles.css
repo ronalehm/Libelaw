@@ -57,12 +57,6 @@ section{padding:96px 0}
 .column .bar:nth-child(3){animation-delay:.3s}
 @keyframes rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 
-/* Pilares Crea / Innova / Desarrolla / Emprende */
-.pillars{background:var(--navy);color:var(--white);padding:28px 0}
-.pillars ul{list-style:none;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.pillars li{font-family:var(--serif);font-size:clamp(1.3rem,2.4vw,1.9rem);display:flex;align-items:center;gap:12px}
-.pillars li::before{content:"";width:10px;height:28px;background:var(--c)}
-
 /* Problema */
 .problem .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px}
 .problem h2{color:var(--granate)}
@@ -168,7 +162,6 @@ footer a:hover{color:var(--white);text-decoration:underline}
   .hero-ctas{padding-bottom:72px}
   .svc{flex-basis:260px}
   .why ul{grid-template-columns:1fr}
-  .pillars ul{grid-template-columns:repeat(2,1fr)}
   .stairs{grid-template-columns:1fr}
   .stairs li:nth-child(n){min-height:0}
   .stairs li::before{font-size:3rem;margin-bottom:0}
@@ -355,10 +348,6 @@ section h2::before{content:"";display:block;width:48px;height:5px;margin-bottom:
   .hero h1{font-size:2.6rem}
   .hero-lead{font-size:1.05rem;margin:18px 0 24px}
   .hero-ctas{gap:10px;padding-bottom:44px}
-  .pillars{padding:16px 0}
-  .pillars ul{gap:10px}
-  .pillars li{font-size:1.15rem}
-  .pillars li::before{height:20px;width:8px}
 
   .problem .wrap,.faq .wrap,.founder .wrap,.book .wrap{gap:18px}
   .problem .body{font-size:1rem}
@@ -462,7 +451,6 @@ section h2::before{content:"";display:block;width:48px;height:5px;margin-bottom:
 .m-cta{display:none}
 @media (max-width:900px){.hero-note{padding-bottom:72px}}
 @media (max-width:700px){
-  .pillars{display:none}
   .hero-note{margin-top:14px;padding-bottom:40px;font-size:.9rem}
   .steps-cta .btn{width:100%;justify-content:center}
   .steps-cta{margin-top:20px}
@@ -474,12 +462,6 @@ section h2::before{content:"";display:block;width:48px;height:5px;margin-bottom:
   body:has(.m-cta) .wa{display:none}
 }
 @media (prefers-reduced-motion:reduce){.m-cta{transition:none}.btn:active{transform:none}}
-
-/* Pilares con iconos (Crea, Innova, Desarrolla, Emprende) */
-.pillars{background:var(--white);color:var(--c);padding:36px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.pillars li{flex-direction:column;gap:10px;color:var(--c);font-size:clamp(1.2rem,2vw,1.6rem);text-align:center}
-.pillars li::before{display:none}
-.pil-icon{width:72px;height:72px;color:var(--c)}
 
 /* Servicios: icono grande del Canva */
 .svc .svc-icon{width:64px;height:64px;background:none;border-radius:0;color:var(--navy);display:block;margin-bottom:8px}
@@ -493,10 +475,6 @@ section h2::before{content:"";display:block;width:48px;height:5px;margin-bottom:
 .mv p{color:var(--muted);line-height:1.75}
 
 @media (max-width:700px){
-  .pillars{display:block;padding:20px 0}
-  .pillars ul{grid-template-columns:repeat(4,1fr);gap:4px;padding:0 8px}
-  .pillars li{font-size:.95rem;gap:6px}
-  .pil-icon{width:44px;height:44px}
   .svc .svc-icon{width:52px;height:52px}
   .founder .mv{grid-template-columns:1fr;gap:16px;margin-top:32px}
   .mv>div{padding:20px}
