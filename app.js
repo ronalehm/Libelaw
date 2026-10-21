@@ -3,7 +3,7 @@
 // ===== Configuración =====
 // Enlace de reservas: Calendly (https://calendly.com/usuario/consulta) o
 // página de citas de Google Calendar (https://calendar.app.google/xxxx).
-const BOOKING_URL = 'https://calendly.com/libelaw/consulta-inicial';
+const BOOKING_URL = 'https://calendar.app.google/cms4j9Fs4bME6iv58';
 const WHATSAPP = '51984426215';
 
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
